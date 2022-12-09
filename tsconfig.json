@@ -1,0 +1,25 @@
+{
+    "ts-node": {
+        // Do not forget to `npm i -D tsconfig-paths`
+        "require": ["tsconfig-paths/register"]
+    },
+    "compilerOptions": {
+        "target": "es2016",
+        "module": "commonjs",
+        "outDir": "./dist",
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "skipLibCheck": true,
+        "baseUrl": "src",
+        "paths": {
+            "@config/*": ["config/*"],
+            "@includes/*": ["includes/*"],
+            "@routes/*": ["routes/*"],
+            "@models/*": ["models/*"],
+            "@controller/*": ["controller/*"],
+            "@middleware/*": ["middleware/*"]
+        }
+    },
+    "include": ["src/**/*"]
+}
